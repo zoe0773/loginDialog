@@ -1,0 +1,173 @@
+.logindialog{
+		width: 400px;
+		height: 245px;	
+		position: absolute;	
+		left: 400px;
+		top: 120px;
+		background: #f6f6f6;
+		border: 1px solid #ccc;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		box-shadow: 0 0 6px #000;
+		-webkit-box-shadow: 0 0 6px #000;
+		-moz-box-shadow: 0 0 6px #000;
+}
+.close i{
+	cursor: pointer;
+	display: block;
+	width: 28px;
+	height: 28px;	
+	background: url('../imges/boxy_btn.png') no-repeat;
+	z-index: 3;
+}
+.close{	
+	position: absolute;
+	right: -10px;
+	top: -10px;
+}
+.log_i{
+	width: 200px;
+	height: 44px;
+	background: url('../imges/login_window_logo.png') no-repeat;
+	margin-top: 10px;
+	margin-left: 100px;
+	cursor: move;
+	background-position: -200px 0px;
+}
+.inputs{
+	margin-left: 80px;
+	margin-top: 25px;
+}
+.inputs label{
+	display: block;
+	width: 240px;
+	font:bold 15px arial;
+	padding-bottom: 20px;
+
+}
+.inputs label input{
+	width: 185px;	
+	border: 1px solid #ccc;
+	font-size: 16px;
+	padding: 2px;
+	color: #868686;	
+    outline: none;
+}
+input:focus{ /*两个输入框获取焦点时--圆角--内阴影*/
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+	box-shadow: 0 0 2px #ABADF6 inset;
+}
+.icon{
+	margin-left: 70px;
+	position: relative;
+}
+.login_ic{
+	width: 111px;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 14px;
+	border: 0;
+	color: #0C4E7C;
+	cursor: pointer;
+	background: url('../imges/login_btn.png') no-repeat;
+	background-position: -111px 0;
+}
+#bt_icon{
+	position: absolute;
+	top: 10px;
+	left: 160px;
+	/*width: 65px;*/
+	height: 16px;
+	font-size: 15px;
+	cursor: pointer;
+}
+#bt_icon .state_show{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 1px 1px 1px 2px;/*
+	background: url('../imges/ptlogin.png') no-repeat;
+	background-position: 0 0px;*/
+	overflow: hidden;
+
+}
+#bt_icon #sj{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url('../imges/ptlogin.png') no-repeat;
+	background-position: 0 -22px;	
+	overflow: hidden;
+}
+#bt_icon span{
+	float: right;	
+}
+
+/*.bt_sign .log_state{
+	border: 1px solid red;
+	display: none;
+    position: absolute;
+    right: 68px;
+    top: 193px;
+    z-index: 10;
+    width: 100px;
+    height: 133px;
+}*/
+#log_state{
+		display: none;/*此元素不被显示*/
+		list-style: none;
+		position: absolute;
+		right: 68px;
+		top: 27px;
+		background: white;
+		border-width: 1px;
+		border-style: solid;
+		width: 100px;
+		/*height: 140px;		*/
+		line-height: 1.5em;
+		overflow: hidden;
+		border-color: #ccc #cdcdcd #cdcdcd #cdcdcd;
+		-webkit-box-shadow: -1px -1px 2px #ABADF6 ;
+		-moz-box-shadow:-1px -1px 2px #ABADF6;
+		box-shadow:0 0 2px #ABADF6;
+	}
+	.log_state .statepanel_li{
+		cursor: pointer;
+		display: block;		
+		font-size: 14px;
+
+	}
+	h4{
+		margin: 0;
+		padding: 0;
+	}
+	.online,.callme,.leave,.busy,.DND,.cloaking{
+		display: inline-block;
+		background: url('../imges/ptlogin.png') no-repeat;			
+		float: left;
+		width: 14px;
+		height: 14px;
+		margin: 4px 2px 0px 1px;
+	}
+	.log_state .online{
+		background-position: 0 0;
+	}
+	.log_state .callme{
+		background-position: -72px 0;
+	}
+	.log_state .leave{
+		background-position: -18px 0;
+	}
+	.log_state .busy{
+		background-position: -36px 0;
+	}
+	.log_state .DND{
+		background-position: -108px 0;
+	}
+	.log_state .cloaking{
+		background-position: -54px 0;
+	}

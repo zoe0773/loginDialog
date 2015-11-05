@@ -1,0 +1,47 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.log_state{
+		list-style: none;
+		position: absolute;
+		right:168px;
+		top: 193px;
+		border-width: 1px;
+		border-style: solid;
+		width: 100px;
+		height: 140px;
+		line-height: 1.5em;
+		overflow: hidden;
+		border-color: #ccc #6a6a6a #666 #cdcdcd;
+	}
+	.log_state .statepanel_li{
+		cursor: pointer;
+		display: block;
+	}
+	.statepanel_li i{
+		display: inline-block;
+		background: url('../imges/ptlogin.png') no-repeat;			
+		float: left;
+		width: 14px;
+		height: 14px;
+		margin: 4px 2px 0px 1px;
+	}
+	#online i{
+		background-position: 0 0;
+	}
+	#callme i{
+		background-position: -72px 0;
+	}
+	#leave i{
+		background-position: -18px 0;
+	}
+	#busy i{
+		background-position: -36px 0;
+	}
+	#DND i{
+		background-position: -108px 0;
+	}
+	#cloaking i{
+		background-position: -54px 0;
+	}

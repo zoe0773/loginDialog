@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script src="./js/EventUtil.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="./js/main.js" type="text/javascript" charset="utf-8"  defer async></script>
+
+	<title>qq登陆框</title>
+</head>
+<body>
+	<div class="logindialog" id="logindialog">
+		<div class="close" id ="close"><i></i></div>
+		<div class="log_i" id = "log_i"><i></i></div>
+		<div class="inputs">
+		<label>账号：<input autocomplete="on" type="text" name="zh" value="" placeholder="QQ号码或Email账号"></label>
+		<label>密码：<input type="password" name="sec" value=""></label>
+		</div>
+		<div class="icon">
+			<div class="login_ic"></div>
+			<div id="loginState" class="bt_sign log_state" title="选择在线">
+				<div id="bt_icon">
+					<i id="gr" class="state_show online"></i>
+					<i id="sj" ></i>
+					<span id="stateText" class="state_txt">在线</span>
+				</div>
+				<ul id="log_state" class="log_state">
+					<li id="online" class="statepanel_li">
+						<i class="stateSelect_icon online"></i>
+						<h4 class="h4txt">我在线上</h4>
+					</li>
+					<li id="callme" class="statepanel_li">
+						<i class="stateSelect_icon callme"></i>
+						<h4 class="h4txt">Q我吧</h4>
+					</li>
+					<li id="leave" class="statepanel_li">
+						<i class="stateSelect_icon leave"></i>
+						<h4 class="h4txt">离开</h4>
+					</li>
+					<li id="busy" class="statepanel_li">
+						<i class="stateSelect_icon busy"></i>
+						<h4 class="h4txt">忙碌</h4>
+					</li>
+					<li id="DND" class="statepanel_li">
+						<i class="stateSelect_icon DND"></i>
+						<h4 class="h4txt">请勿打扰</h4>
+					</li>
+					<li id="cloaking" class="statepanel_li">
+						<i class="stateSelect_icon cloaking"></i>
+						<h4 class="h4txt">隐身</h4>
+					</li>
+				</ul>
+			</div>		
+		</div>
+	</div>	
+</body>
+</html>
